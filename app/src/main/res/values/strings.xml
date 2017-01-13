@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">Drawing</string>
+    <string name="general_mode">一般抽籤</string>
+    <string name="number_mode">數字抽籤</string>
+    <string name="multiple_pair_mode">多配多抽籤</string>
+</resources>
