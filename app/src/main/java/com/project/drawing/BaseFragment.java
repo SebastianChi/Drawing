@@ -1,7 +1,7 @@
 package com.project.drawing;
 
 import android.app.Activity;
-import android.app.Fragment;
+import android.support.v4.app.Fragment;
 import android.content.Context;
 import android.os.Bundle;
 import android.util.Log;
@@ -24,11 +24,11 @@ public class BaseFragment extends Fragment {
     public BaseFragment() {
     }
 
-    public static BaseFragment newInstance(int arg){
+    public static BaseFragment newInstance(){
         BaseFragment fragment = new BaseFragment();
-        Bundle bundle = new Bundle();
-        bundle.putInt(bundleKey, arg);
-        fragment.setArguments(bundle);
+//        Bundle bundle = new Bundle();
+//        bundle.putInt(bundleKey, arg);
+//        fragment.setArguments(bundle);
         return fragment;
     }
 
@@ -42,14 +42,11 @@ public class BaseFragment extends Fragment {
     }
 
     @Override
-    public void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-    }
-
-    @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View rootView = inflater.inflate(R.layout.fragment_main, container, false);
-        mNumberOfDraw = getArguments().getInt(bundleKey);
+//        if(getArguments() != null) {
+//            mNumberOfDraw = getArguments().getInt(bundleKey);
+//        }
         return rootView;
     }
 

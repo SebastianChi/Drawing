@@ -11,17 +11,4 @@
     android:paddingBottom="@dimen/activity_vertical_margin"
     tools:context="com.project.drawing.MainActivity">
 
-    <!--<Button-->
-        <!--android:id="@+id/generalButton"-->
-        <!--android:layout_width="wrap_content"-->
-        <!--android:layout_height="wrap_content"-->
-        <!--android:text="@string/general_mode" />-->
-
-    <!--<Button-->
-        <!--android:id="@+id/multipleButton"-->
-        <!--android:layout_below="@id/generalButton"-->
-        <!--android:layout_width="wrap_content"-->
-        <!--android:layout_height="wrap_content"-->
-        <!--android:layout_marginTop="@dimen/activity_vertical_margin"-->
-        <!--android:text="@string/multiple_pair_mode" />-->
 </RelativeLayout>
